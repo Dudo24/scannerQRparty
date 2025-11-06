@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estado de Invitados</title>
+  <link rel="stylesheet" href="../css/verTablaEstado.css">
+</head>
+<body>
+  <!-- Improved header with back button -->
+  <header class="status-header">
+    <div class="header-content">
+      <a href="index.html" class="back-button">
+        <span class="back-icon">←</span>
+        <span>Volver</span>
+      </a>
+      <h1>Estado de Invitados</h1>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Modern table styling with responsive design -->
+    <div class="table-wrapper">
+      <table id="guestTable">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Hora Entrada</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody id="guestTableBody">
+          <!-- Los datos de los invitados se cargarán aquí -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script type="module" src="../js/verTablaEstado.js"></script>
+</body>
+</html>
