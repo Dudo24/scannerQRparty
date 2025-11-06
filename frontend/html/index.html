@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control de Entradas QR</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+<body>
+  <!-- Added modern header with theme toggle button -->
+  <header class="main-header">
+    <div class="header-content">
+      <div class="header-left">
+        <h1>🎉 Control de Entradas QR</h1>
+      </div>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <!-- Redesigned register section with card layout -->
+    <section class="section-card" id="register">
+      <div class="section-header">
+        <h2>Registrar Invitado</h2>
+        <p class="section-subtitle">Genera un QR para un nuevo invitado</p>
+      </div>
+      <div class="register-form">
+        <div class="input-group">
+          <input type="text" id="nombre" placeholder="Nombre del invitado" class="input-field">
+          <button onclick="registrarInvitado()" class="btn-primary">Generar QR</button>
+        </div>
+        <div id="qrContainer" class="qr-container"></div>
+      </div>
+    </section>
+
+    <!-- Improved scanner section styling -->
+    <section class="section-card" id="scanner">
+      <div class="section-header">
+        <h2>Escanear QR</h2>
+        <p class="section-subtitle">Captura el código QR del invitado</p>
+      </div>
+      <div id="reader" class="qr-reader"></div>
+    </section>
+
+    <!-- Enhanced status table link section -->
+    <section class="section-card" id="statusTableLink">
+      <div class="section-header">
+        <h2>Ver Estado</h2>
+        <p class="section-subtitle">Consulta el registro de entradas</p>
+      </div>
+      <a href="verTablaEstado.html" class="btn-secondary">
+        <span>Ir a la Tabla de Estado</span>
+        <span class="btn-arrow">→</span>
+      </a>
+    </section>
+  </main>
+
+  <script src="../js/darkMode.js"></script>
+  <script type="module" src="../js/index.js"></script>
+</body>
+</html>
+

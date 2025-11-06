@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Scanner - Login Organizador</title>
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+  <!-- Added animated gradient background with modern styling -->
+  <div class="background-animation">
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+  </div>
+
+  <div class="login-wrapper">
+    <div class="login-container">
+      <!-- Enhanced header with icon and modern typography -->
+      <div class="login-header">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+            <path d="M7 7h10v10H7z"></path>
+            <path d="M9 9h6v6H9z"></path>
+          </svg>
+        </div>
+        <h1>QR Scanner</h1>
+        <p class="subtitle">Acceso Organizador</p>
+      </div>
+
+      <!-- Improved form with modern input styling -->
+      <form id="loginForm" class="login-form">
+        <div class="form-group">
+          <label for="username" class="form-label">Usuario</label>
+          <div class="input-wrapper">
+            <input 
+              type="text" 
+              id="username" 
+              placeholder="Ingresa tu usuario"
+              class="form-input"
+              required
+            >
+            <div class="input-accent"></div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password" class="form-label">Contraseña</label>
+          <div class="input-wrapper">
+            <input 
+              type="password" 
+              id="password" 
+              placeholder="Ingresa tu contraseña"
+              class="form-input"
+              required
+            >
+            <div class="input-accent"></div>
+          </div>
+        </div>
+
+        <!-- Enhanced button with modern styling and hover effects -->
+        <button type="submit" class="btn-submit">
+          <span class="btn-text">Ingresar</span>
+          <span class="btn-icon">→</span>
+        </button>
+
+        <div id="loginError" class="error-message"></div>
+      </form>
+
+      <div class="login-footer">
+        <p class="footer-text">Organizador de la fiesta</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="../js/login.js"></script>
+</body>
+</html>
