@@ -23,8 +23,8 @@ console.log("server.js: Middleware configurado");
 
 // ===== LOGIN SIMPLE =====
 app.post("/api/login", (req, res) => {
-  const { user, pass } = req.body;
-  if (user === process.env.ADMIN_USER && pass === process.env.ADMIN_PASS) {
+  const { username, password } = req.body;
+  if (username === process.env.ADMIN_USER && password === process.env.ADMIN_PASS) {
     return res.json({ success: true, token: "organizador123" });
   }
   res.status(401).json({ success: false, msg: "Credenciales incorrectas" });

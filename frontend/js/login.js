@@ -20,7 +20,7 @@ document.getElementById("loginForm").addEventListener("submit", async (event) =>
 
     if (response.ok) {
       localStorage.setItem("authToken", data.token)
-      window.location.href = "index.html"
+      window.location.href = "./html/index.html"
     } else {
       errorDiv.textContent = data.msg || "Error en la autenticación"
     }
